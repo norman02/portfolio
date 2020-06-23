@@ -1,0 +1,119 @@
+body {
+    min-width: 300px;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    background-color: rgb(100, 32, 32);
+    color: whitesmoke;
+    padding: 1.5em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+header p {
+    font-size: 2em;
+}
+
+#img-div {
+    width: 100%;
+    text-align: center;
+    margin: 2.2em;
+}
+
+#image {
+    border: 2em;
+    border-style: solid;
+    border-color: rgb(100, 32, 32);
+    border-radius: 50%;
+}
+
+#img-caption {
+    padding-top: 0.5em;
+}
+
+section {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin: 0 4em;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0.5em 0;
+    color: rgb(100, 32, 32);
+}
+
+em {
+    font-style: italic;
+    font-weight: 600;
+}
+
+#quote {
+    margin: 2em 6em;
+    font-style: italic;
+}
+
+footer {
+    background-color: rgb(100, 32, 32);
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;   
+}
+
+#tribute-link {
+    color: white;
+}
+
+#copyright {
+    font-size: 0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+    #quote {
+        margin: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #image {
+        display: none;
+    }
+
+    #img-caption {
+        display: none;
+    }
+
+    #tribute-info h2 {
+        display: none;
+    } 
+    
+    section {
+        margin: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
