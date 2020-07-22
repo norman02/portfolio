@@ -61,6 +61,7 @@ header {
     color: var(--red);
     padding: 32rem 0;
     text-align: center;
+    z-index: 2;
 }
 
 a {
@@ -101,7 +102,18 @@ main {
     margin: 1rem 0;
     padding: 1.4rem;
     border-radius: 8px;
+    text-align: center;
 }
+
+.portfolio-section img {
+    margin: 1rem;
+    box-shadow: 0 0 4px var(--grey);
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+
+
 
 
 footer {
@@ -125,4 +137,5 @@ footer ul {
 
 footer li {
     display: inline-block;
+    list-style-type: none;
 }
