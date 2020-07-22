@@ -4,55 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John's Portfolio</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>John Norman - Web Developer</title>
 </head>
 
 <body>
-    <nav id="navbar">
+
+    <nav>
         <ul>
-            <li><a href="#welcome-section">Welcome</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <header id="home">
+        <h1>Hi, I'm John</h1>
+        <h2>a web developer</h2>
+    </header>
+
     <main>
-        <section id="welcome-section">
-            <h1>I am John</h1>
-            <p>a front-end developer</p>
+
+        <section id="about-me" class="main-section">
+            <h2>A little about me...</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare tincidunt tortor sed pulvinar.
+                Duis at volutpat elit. Nam in volutpat velit, ac tristique libero. Vestibulum eget nisl sed ante luctus
+                accumsan. Donec eu leo bibendum, pretium sem non, aliquam elit. Nulla malesuada justo vulputate rutrum
+                mattis. Quisque vel nisl mattis, volutpat lacus vel, lacinia leo. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus.
+            </p>
+
+            <p>
+                Phasellus iaculis lacinia felis eget bibendum. Donec vel fringilla magna. Vivamus ac massa non leo
+                scelerisque consectetur vel sed turpis. Duis sed mi magna. Curabitur porta sit amet arcu vel ultricies.
+                Vivamus dictum eleifend leo eget efficitur. Mauris bibendum nisl in ultricies vulputate. Fusce eget diam
+                lectus.
+            </p>
         </section>
-        <section id="projects">
-            <h2>Here are some of my projects</h2>
-            <div id="projects-container">
-                <div class="project-tile">
-                    <a href="./pages/lovelace.html" target="_blank">
-                        <img src="" alt="Tribute Page">
-                        <p>Tribute Page</p>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <a href="./pages/product_landing.html" target="_blank">
-                        <img src="" alt="product landing">
-                        <p>Product landing page</p>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <a href="./pages/survey.html" target="_blank">
-                        <img src="" alt="">
-                        <p>Survey Form</p>
-                    </a>
-                </div>
+
+        <section id="portfolio" class="main-section">
+            <h2>Here is some work I've done...</h2>
+
+            <section class="portfolio-section">
+                <h3>CSS challenges from <a href="https://www.frontendmentor.io/profile/norman02" target="_blank">Frontend Mentor</a>
+                </h3>
+
+
+                <a href="https://single-price-grid-component-nine-gamma.vercel.app/" target="_blank"><img
+                        src="images/price-grid.jpg" alt="price grid layout"></a>
+                <a href="https://hudddle-landing-page-git-master.norman02.vercel.app/" target="_blank"><img src="images/landing-page.jpg" alt="landing page"></a>
+                <a href="https://fylo-data-storage-azure.vercel.app/" target="_blank"><img src="images/storage-componant.jpg" alt="storage component"></a>
+                <a href="https://four-card-delta.vercel.app/" target="_blank"><img src="images/four-card.jpg" alt="four card display"></a>
+
+
+            </section>
+
+
         </section>
-        <section id="contact">
-            <h2>Let's build something together...</h2>
-            <a id="profile-link" href="https://github.com/norman02" target="_blank">GitHub Profile</a>
-        </section>
+
     </main>
-    <footer>
-        <p>&copy 2020 John Norman</p>
+
+    <footer id="contact">
+        <p>&copy John Norman 2020</p>
+
+        <ul>
+            <li><a href="https://github.com/norman02" target="_bla nk"><img class="social-icon" src="images/github-brands.svg"
+                        alt="github"></a></li>
+            <li><a href="https://www.linkedin.com/in/johnnnorman/" target="_blank"><img class="social-icon"
+                        src="images/linkedin-brands.svg" alt="linkedin"></a></li>
+            <li><a href="https://www.facebook.com/john.norman.1800/" target="_blank"><img class="social-icon"
+                        src="images/facebook-brands.svg" alt="facebook"></a></li>
+
+        </ul>
+
     </footer>
+
 </body>
 
 </html>
