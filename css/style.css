@@ -104,11 +104,6 @@ main {
 }
 
 
-img {
-    height: auto;
-    width: 100%;
-}
-
 footer {
     background-color: var(--black);
     color: var(--white);
