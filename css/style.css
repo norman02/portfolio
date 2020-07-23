@@ -24,6 +24,7 @@ nav {
     width: 100%;
     position: fixed;
     padding-right: 2rem;
+    z-index: 1;
 }
 
 nav ul {
@@ -39,7 +40,7 @@ nav a {
     display: inline-block;
     text-decoration: none;
     font-size: 2.2rem;
-    padding: 2.2rem 1.2rem;
+    padding: 2.8rem 1.2rem;
     color: var(--white);
 }
 
@@ -59,9 +60,12 @@ nav a{
 header {
     background-color: var(--black);
     color: var(--red);
-    padding: 32rem 0;
     text-align: center;
-    z-index: 2;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -113,16 +117,14 @@ main {
 }
 
 
-
-
-
 footer {
     background-color: var(--black);
     color: var(--white);
     font-size: 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 8rem 0;
 }
 
@@ -131,11 +133,56 @@ footer {
     margin: 2rem;
 }
 
-footer ul {
-    padding-right: 4rem;
-}
 
 footer li {
     display: inline-block;
     list-style-type: none;
+}
+
+@media only screen and (max-width: 700px) {
+    nav ul {
+        text-align: center;
+    }
+    nav a {
+        font-size: 1.8rem;
+        padding: 1.2rem 1.2rem;
+
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    nav a {
+        font-size: 1.6rem;
+    }
+    body {
+        font-size: 1.6rem;
+    }
+
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2.8rem;
+    }
+    .main-section {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .portfolio-section {
+
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .portfolio-section img {
+        margin: 0;
+
+        width: 100%;
+        max-width: 100%;
+    }
 }
